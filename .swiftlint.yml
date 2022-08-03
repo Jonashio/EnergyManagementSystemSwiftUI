@@ -10,12 +10,12 @@ opt_in_rules: # some rules are only opt-in
   - colon
   - comma
 included: # paths to include during linting. `--path` is ignored if present.
-  - TripManagerSwiftUI
-  - TripManagerSwiftUITests
-  - TripManagerSwiftUIUITests
+  - EnergyManagementSystemSwiftUI
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Pods
-  - TripManagerSwiftUI/R.generated.swift
+  - EnergyManagementSystemSwiftUI/R.generated.swift
+  - EnergyManagementSystemSwiftUITests
+  - EnergyManagementSystemSwiftUIUITests
 
 # configurable rules can be customized from this configuration file
 # binary rules can set their severity level
@@ -42,7 +42,7 @@ large_tuple: # warn user when using 3 values in tuple, give error if there are 4
 type_name:
   min_length: 4 # only warning
   max_length: # warning and error
-    warning: 30
-    error: 35
+    warning: 35
+    error: 40
   excluded: iPhone # excluded via string
 reporter: "xcode"
