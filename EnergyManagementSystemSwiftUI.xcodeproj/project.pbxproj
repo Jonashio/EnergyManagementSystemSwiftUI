@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31F3489369ECF4970107C575 /* Pods_EnergyManagementSystemSwiftUI_EnergyManagementSystemSwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B6783E55A76E4EE8EAB4D4 /* Pods_EnergyManagementSystemSwiftUI_EnergyManagementSystemSwiftUIUITests.framework */; };
+		4B49D209083427F5E52AC440 /* Pods_EnergyManagementSystemSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56021E3009CB7600EE50C40 /* Pods_EnergyManagementSystemSwiftUI.framework */; };
+		6D2854AD860BC304F788732A /* Pods_EnergyManagementSystemSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B4465ED70925E5BEF1062C /* Pods_EnergyManagementSystemSwiftUITests.framework */; };
+		A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */; };
+		A1CC257D289A8CFE003E31DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257C289A8CFE003E31DE /* ContentView.swift */; };
+		A1CC257F289A8CFF003E31DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC257E289A8CFF003E31DE /* Assets.xcassets */; };
+		A1CC2582289A8CFF003E31DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC2581289A8CFF003E31DE /* Preview Assets.xcassets */; };
+		A1CC258C289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC258B289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift */; };
+		A1CC2596289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC2595289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.swift */; };
+		A1CC2598289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC2597289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1CC2588289A8CFF003E31DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1CC256F289A8CFE003E31DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1CC2576289A8CFE003E31DE;
+			remoteInfo = EnergyManagementSystemSwiftUI;
+		};
+		A1CC2592289A8CFF003E31DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1CC256F289A8CFE003E31DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1CC2576289A8CFE003E31DE;
+			remoteInfo = EnergyManagementSystemSwiftUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13AE37822867EFCAC043A0CE /* Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests.debug.xcconfig"; path = "Target Support Files/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		24C20DF83F1188A089AAF208 /* Pods-EnergyManagementSystemSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnergyManagementSystemSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-EnergyManagementSystemSwiftUI/Pods-EnergyManagementSystemSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		4EC079FC951C8854BBB91D04 /* Pods-EnergyManagementSystemSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnergyManagementSystemSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-EnergyManagementSystemSwiftUITests/Pods-EnergyManagementSystemSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		61B4465ED70925E5BEF1062C /* Pods_EnergyManagementSystemSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnergyManagementSystemSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CC2577289A8CFE003E31DE /* EnergyManagementSystemSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyManagementSystemSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIApp.swift; sourceTree = "<group>"; };
+		A1CC257C289A8CFE003E31DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1CC257E289A8CFF003E31DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1CC2581289A8CFF003E31DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1CC2587289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnergyManagementSystemSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CC258B289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUITests.swift; sourceTree = "<group>"; };
+		A1CC2591289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnergyManagementSystemSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1CC2595289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIUITests.swift; sourceTree = "<group>"; };
+		A1CC2597289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A56021E3009CB7600EE50C40 /* Pods_EnergyManagementSystemSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnergyManagementSystemSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92243568747AD388A17BFE7 /* Pods-EnergyManagementSystemSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnergyManagementSystemSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-EnergyManagementSystemSwiftUI/Pods-EnergyManagementSystemSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		D0B6783E55A76E4EE8EAB4D4 /* Pods_EnergyManagementSystemSwiftUI_EnergyManagementSystemSwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnergyManagementSystemSwiftUI_EnergyManagementSystemSwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E94E5163884F05F0C877E7AE /* Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests.release.xcconfig"; path = "Target Support Files/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F9A66A33A3EFB6C07EC21F51 /* Pods-EnergyManagementSystemSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnergyManagementSystemSwiftUITests.debug.xcconfig"; path = "Target Support Files/Pods-EnergyManagementSystemSwiftUITests/Pods-EnergyManagementSystemSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1CC2574289A8CFE003E31DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B49D209083427F5E52AC440 /* Pods_EnergyManagementSystemSwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CC2584289A8CFF003E31DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D2854AD860BC304F788732A /* Pods_EnergyManagementSystemSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CC258E289A8CFF003E31DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31F3489369ECF4970107C575 /* Pods_EnergyManagementSystemSwiftUI_EnergyManagementSystemSwiftUIUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E6F514908AF1C5FCE98596F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24C20DF83F1188A089AAF208 /* Pods-EnergyManagementSystemSwiftUI.debug.xcconfig */,
+				A92243568747AD388A17BFE7 /* Pods-EnergyManagementSystemSwiftUI.release.xcconfig */,
+				13AE37822867EFCAC043A0CE /* Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests.debug.xcconfig */,
+				E94E5163884F05F0C877E7AE /* Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests.release.xcconfig */,
+				F9A66A33A3EFB6C07EC21F51 /* Pods-EnergyManagementSystemSwiftUITests.debug.xcconfig */,
+				4EC079FC951C8854BBB91D04 /* Pods-EnergyManagementSystemSwiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A1CC256E289A8CFE003E31DE = {
+			isa = PBXGroup;
+			children = (
+				A1CC2579289A8CFE003E31DE /* EnergyManagementSystemSwiftUI */,
+				A1CC258A289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests */,
+				A1CC2594289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests */,
+				A1CC2578289A8CFE003E31DE /* Products */,
+				5E6F514908AF1C5FCE98596F /* Pods */,
+				FF56C8D8AF43DD51CC6713DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1CC2578289A8CFE003E31DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1CC2577289A8CFE003E31DE /* EnergyManagementSystemSwiftUI.app */,
+				A1CC2587289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.xctest */,
+				A1CC2591289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1CC2579289A8CFE003E31DE /* EnergyManagementSystemSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */,
+				A1CC257C289A8CFE003E31DE /* ContentView.swift */,
+				A1CC257E289A8CFF003E31DE /* Assets.xcassets */,
+				A1CC2580289A8CFF003E31DE /* Preview Content */,
+			);
+			path = EnergyManagementSystemSwiftUI;
+			sourceTree = "<group>";
+		};
+		A1CC2580289A8CFF003E31DE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A1CC2581289A8CFF003E31DE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1CC258A289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1CC258B289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift */,
+			);
+			path = EnergyManagementSystemSwiftUITests;
+			sourceTree = "<group>";
+		};
+		A1CC2594289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1CC2595289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.swift */,
+				A1CC2597289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift */,
+			);
+			path = EnergyManagementSystemSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		FF56C8D8AF43DD51CC6713DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A56021E3009CB7600EE50C40 /* Pods_EnergyManagementSystemSwiftUI.framework */,
+				D0B6783E55A76E4EE8EAB4D4 /* Pods_EnergyManagementSystemSwiftUI_EnergyManagementSystemSwiftUIUITests.framework */,
+				61B4465ED70925E5BEF1062C /* Pods_EnergyManagementSystemSwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1CC2576289A8CFE003E31DE /* EnergyManagementSystemSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1CC259B289A8CFF003E31DE /* Build configuration list for PBXNativeTarget "EnergyManagementSystemSwiftUI" */;
+			buildPhases = (
+				29D395ADB24D17E544338CE9 /* [CP] Check Pods Manifest.lock */,
+				A1CC2573289A8CFE003E31DE /* Sources */,
+				A1CC2574289A8CFE003E31DE /* Frameworks */,
+				A1CC2575289A8CFE003E31DE /* Resources */,
+				BD212E0E78220DC33563C064 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnergyManagementSystemSwiftUI;
+			productName = EnergyManagementSystemSwiftUI;
+			productReference = A1CC2577289A8CFE003E31DE /* EnergyManagementSystemSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1CC2586289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1CC259E289A8CFF003E31DE /* Build configuration list for PBXNativeTarget "EnergyManagementSystemSwiftUITests" */;
+			buildPhases = (
+				22542FE03A3F7D188C09B2BB /* [CP] Check Pods Manifest.lock */,
+				A1CC2583289A8CFF003E31DE /* Sources */,
+				A1CC2584289A8CFF003E31DE /* Frameworks */,
+				A1CC2585289A8CFF003E31DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1CC2589289A8CFF003E31DE /* PBXTargetDependency */,
+			);
+			name = EnergyManagementSystemSwiftUITests;
+			productName = EnergyManagementSystemSwiftUITests;
+			productReference = A1CC2587289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1CC2590289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1CC25A1289A8CFF003E31DE /* Build configuration list for PBXNativeTarget "EnergyManagementSystemSwiftUIUITests" */;
+			buildPhases = (
+				CF88A3F426062F53329831B7 /* [CP] Check Pods Manifest.lock */,
+				A1CC258D289A8CFF003E31DE /* Sources */,
+				A1CC258E289A8CFF003E31DE /* Frameworks */,
+				A1CC258F289A8CFF003E31DE /* Resources */,
+				D848CD8B4379E5A571EB28CB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1CC2593289A8CFF003E31DE /* PBXTargetDependency */,
+			);
+			name = EnergyManagementSystemSwiftUIUITests;
+			productName = EnergyManagementSystemSwiftUIUITests;
+			productReference = A1CC2591289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1CC256F289A8CFE003E31DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A1CC2576289A8CFE003E31DE = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					A1CC2586289A8CFF003E31DE = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = A1CC2576289A8CFE003E31DE;
+					};
+					A1CC2590289A8CFF003E31DE = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = A1CC2576289A8CFE003E31DE;
+					};
+				};
+			};
+			buildConfigurationList = A1CC2572289A8CFE003E31DE /* Build configuration list for PBXProject "EnergyManagementSystemSwiftUI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1CC256E289A8CFE003E31DE;
+			productRefGroup = A1CC2578289A8CFE003E31DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1CC2576289A8CFE003E31DE /* EnergyManagementSystemSwiftUI */,
+				A1CC2586289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests */,
+				A1CC2590289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1CC2575289A8CFE003E31DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CC2582289A8CFF003E31DE /* Preview Assets.xcassets in Resources */,
+				A1CC257F289A8CFF003E31DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CC2585289A8CFF003E31DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CC258F289A8CFF003E31DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22542FE03A3F7D188C09B2BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnergyManagementSystemSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29D395ADB24D17E544338CE9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnergyManagementSystemSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD212E0E78220DC33563C064 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnergyManagementSystemSwiftUI/Pods-EnergyManagementSystemSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnergyManagementSystemSwiftUI/Pods-EnergyManagementSystemSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnergyManagementSystemSwiftUI/Pods-EnergyManagementSystemSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF88A3F426062F53329831B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D848CD8B4379E5A571EB28CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests/Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1CC2573289A8CFE003E31DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CC257D289A8CFE003E31DE /* ContentView.swift in Sources */,
+				A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CC2583289A8CFF003E31DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CC258C289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1CC258D289A8CFF003E31DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1CC2598289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift in Sources */,
+				A1CC2596289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1CC2589289A8CFF003E31DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1CC2576289A8CFE003E31DE /* EnergyManagementSystemSwiftUI */;
+			targetProxy = A1CC2588289A8CFF003E31DE /* PBXContainerItemProxy */;
+		};
+		A1CC2593289A8CFF003E31DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1CC2576289A8CFE003E31DE /* EnergyManagementSystemSwiftUI */;
+			targetProxy = A1CC2592289A8CFF003E31DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1CC2599289A8CFF003E31DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1CC259A289A8CFF003E31DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1CC259C289A8CFF003E31DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C20DF83F1188A089AAF208 /* Pods-EnergyManagementSystemSwiftUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EnergyManagementSystemSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonashioapps.EnergyManagementSystemSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1CC259D289A8CFF003E31DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92243568747AD388A17BFE7 /* Pods-EnergyManagementSystemSwiftUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EnergyManagementSystemSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonashioapps.EnergyManagementSystemSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1CC259F289A8CFF003E31DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A66A33A3EFB6C07EC21F51 /* Pods-EnergyManagementSystemSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonashioapps.EnergyManagementSystemSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnergyManagementSystemSwiftUI.app/EnergyManagementSystemSwiftUI";
+			};
+			name = Debug;
+		};
+		A1CC25A0289A8CFF003E31DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EC079FC951C8854BBB91D04 /* Pods-EnergyManagementSystemSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonashioapps.EnergyManagementSystemSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnergyManagementSystemSwiftUI.app/EnergyManagementSystemSwiftUI";
+			};
+			name = Release;
+		};
+		A1CC25A2289A8CFF003E31DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13AE37822867EFCAC043A0CE /* Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonashioapps.EnergyManagementSystemSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnergyManagementSystemSwiftUI;
+			};
+			name = Debug;
+		};
+		A1CC25A3289A8CFF003E31DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94E5163884F05F0C877E7AE /* Pods-EnergyManagementSystemSwiftUI-EnergyManagementSystemSwiftUIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jonashioapps.EnergyManagementSystemSwiftUIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnergyManagementSystemSwiftUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1CC2572289A8CFE003E31DE /* Build configuration list for PBXProject "EnergyManagementSystemSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1CC2599289A8CFF003E31DE /* Debug */,
+				A1CC259A289A8CFF003E31DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1CC259B289A8CFF003E31DE /* Build configuration list for PBXNativeTarget "EnergyManagementSystemSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1CC259C289A8CFF003E31DE /* Debug */,
+				A1CC259D289A8CFF003E31DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1CC259E289A8CFF003E31DE /* Build configuration list for PBXNativeTarget "EnergyManagementSystemSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1CC259F289A8CFF003E31DE /* Debug */,
+				A1CC25A0289A8CFF003E31DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1CC25A1289A8CFF003E31DE /* Build configuration list for PBXNativeTarget "EnergyManagementSystemSwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1CC25A2289A8CFF003E31DE /* Debug */,
+				A1CC25A3289A8CFF003E31DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1CC256F289A8CFE003E31DE /* Project object */;
+}
