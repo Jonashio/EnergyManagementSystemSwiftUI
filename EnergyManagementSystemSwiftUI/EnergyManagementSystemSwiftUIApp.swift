@@ -11,7 +11,7 @@ import SwiftUI
 struct EnergyManagementSystemSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DashboView()
         }
     }
 }

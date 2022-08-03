@@ -11,7 +11,7 @@
 		4B49D209083427F5E52AC440 /* Pods_EnergyManagementSystemSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56021E3009CB7600EE50C40 /* Pods_EnergyManagementSystemSwiftUI.framework */; };
 		6D2854AD860BC304F788732A /* Pods_EnergyManagementSystemSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B4465ED70925E5BEF1062C /* Pods_EnergyManagementSystemSwiftUITests.framework */; };
 		A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */; };
-		A1CC257D289A8CFE003E31DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257C289A8CFE003E31DE /* ContentView.swift */; };
+		A1CC257D289A8CFE003E31DE /* DashboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257C289A8CFE003E31DE /* DashboView.swift */; };
 		A1CC257F289A8CFF003E31DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC257E289A8CFF003E31DE /* Assets.xcassets */; };
 		A1CC2582289A8CFF003E31DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC2581289A8CFF003E31DE /* Preview Assets.xcassets */; };
 		A1CC258C289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC258B289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift */; };
@@ -43,7 +43,7 @@
 		61B4465ED70925E5BEF1062C /* Pods_EnergyManagementSystemSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnergyManagementSystemSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CC2577289A8CFE003E31DE /* EnergyManagementSystemSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyManagementSystemSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIApp.swift; sourceTree = "<group>"; };
-		A1CC257C289A8CFE003E31DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1CC257C289A8CFE003E31DE /* DashboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboView.swift; sourceTree = "<group>"; };
 		A1CC257E289A8CFF003E31DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CC2581289A8CFF003E31DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1CC2587289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnergyManagementSystemSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +99,54 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A13509E8289A95A8009C48FE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A13509E9289A964E009C48FE /* Dashbo */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A13509E9289A964E009C48FE /* Dashbo */ = {
+			isa = PBXGroup;
+			children = (
+				A13509ED289A9669009C48FE /* Models */,
+				A13509EC289A9661009C48FE /* DataSource */,
+				A13509EB289A965C009C48FE /* ViewModel */,
+				A13509EA289A9658009C48FE /* View */,
+			);
+			path = Dashbo;
+			sourceTree = "<group>";
+		};
+		A13509EA289A9658009C48FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1CC257C289A8CFE003E31DE /* DashboView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A13509EB289A965C009C48FE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A13509EC289A9661009C48FE /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A13509ED289A9669009C48FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A1CC256E289A8CFE003E31DE = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +172,8 @@
 		A1CC2579289A8CFE003E31DE /* EnergyManagementSystemSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A13509E8289A95A8009C48FE /* Modules */,
 				A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */,
-				A1CC257C289A8CFE003E31DE /* ContentView.swift */,
 				A1CC257E289A8CFF003E31DE /* Assets.xcassets */,
 				A1CC2580289A8CFF003E31DE /* Preview Content */,
 			);
@@ -424,7 +472,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CC257D289A8CFE003E31DE /* ContentView.swift in Sources */,
+				A1CC257D289A8CFE003E31DE /* DashboView.swift in Sources */,
 				A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
