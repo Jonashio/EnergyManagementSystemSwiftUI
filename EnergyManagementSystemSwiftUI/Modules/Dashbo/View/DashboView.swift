@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct DashboView: View {
+    
+    @StateObject var viewModel = DashboViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            Text("Hello, world!")
+                .padding()
+            
+            if viewModel.stateEvents == .loading {
+                LoadingView(alpha: 0.15)
+                    .zIndex(3.0)
+            }
+            
+        }.onAppear {
+            viewModel.fetchData()
+        }
+
     }
 }
 

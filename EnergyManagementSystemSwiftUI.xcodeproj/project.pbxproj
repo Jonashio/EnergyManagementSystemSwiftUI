@@ -10,6 +10,17 @@
 		31F3489369ECF4970107C575 /* Pods_EnergyManagementSystemSwiftUI_EnergyManagementSystemSwiftUIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B6783E55A76E4EE8EAB4D4 /* Pods_EnergyManagementSystemSwiftUI_EnergyManagementSystemSwiftUIUITests.framework */; };
 		4B49D209083427F5E52AC440 /* Pods_EnergyManagementSystemSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56021E3009CB7600EE50C40 /* Pods_EnergyManagementSystemSwiftUI.framework */; };
 		6D2854AD860BC304F788732A /* Pods_EnergyManagementSystemSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B4465ED70925E5BEF1062C /* Pods_EnergyManagementSystemSwiftUITests.framework */; };
+		A1279AEA289B7E720046E947 /* DashboDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1279AE9289B7E720046E947 /* DashboDataSource.swift */; };
+		A1279AEC289B7E810046E947 /* DashboViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1279AEB289B7E810046E947 /* DashboViewModel.swift */; };
+		A1279AEF289B7F9F0046E947 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1279AEE289B7F9F0046E947 /* NetworkUtils.swift */; };
+		A1279AF2289B7FFE0046E947 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1279AF1289B7FFE0046E947 /* URLRequest+Extension.swift */; };
+		A1279AF4289B85F30046E947 /* HistoricModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1279AF3289B85F30046E947 /* HistoricModel.swift */; };
+		A1279AF6289B86900046E947 /* LiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1279AF5289B86900046E947 /* LiveModel.swift */; };
+		A1376770289C29AA00742C88 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A137676F289C29AA00742C88 /* Utils.swift */; };
+		A1376772289C734A00742C88 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1376771289C734A00742C88 /* LottieView.swift */; };
+		A1376775289C790100742C88 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1376774289C790100742C88 /* LoadingView.swift */; };
+		A1376777289C796000742C88 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1376776289C796000742C88 /* Color+Extension.swift */; };
+		A137677B289C7DC200742C88 /* electricity-charging.json in Resources */ = {isa = PBXBuildFile; fileRef = A137677A289C7DC100742C88 /* electricity-charging.json */; };
 		A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */; };
 		A1CC257D289A8CFE003E31DE /* DashboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257C289A8CFE003E31DE /* DashboView.swift */; };
 		A1CC257F289A8CFF003E31DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC257E289A8CFF003E31DE /* Assets.xcassets */; };
@@ -41,6 +52,17 @@
 		24C20DF83F1188A089AAF208 /* Pods-EnergyManagementSystemSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnergyManagementSystemSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-EnergyManagementSystemSwiftUI/Pods-EnergyManagementSystemSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		4EC079FC951C8854BBB91D04 /* Pods-EnergyManagementSystemSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnergyManagementSystemSwiftUITests.release.xcconfig"; path = "Target Support Files/Pods-EnergyManagementSystemSwiftUITests/Pods-EnergyManagementSystemSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
 		61B4465ED70925E5BEF1062C /* Pods_EnergyManagementSystemSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnergyManagementSystemSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1279AE9289B7E720046E947 /* DashboDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboDataSource.swift; sourceTree = "<group>"; };
+		A1279AEB289B7E810046E947 /* DashboViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboViewModel.swift; sourceTree = "<group>"; };
+		A1279AEE289B7F9F0046E947 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		A1279AF1289B7FFE0046E947 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		A1279AF3289B85F30046E947 /* HistoricModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricModel.swift; sourceTree = "<group>"; };
+		A1279AF5289B86900046E947 /* LiveModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveModel.swift; sourceTree = "<group>"; };
+		A137676F289C29AA00742C88 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		A1376771289C734A00742C88 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		A1376774289C790100742C88 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A1376776289C796000742C88 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		A137677A289C7DC100742C88 /* electricity-charging.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "electricity-charging.json"; sourceTree = "<group>"; };
 		A1CC2577289A8CFE003E31DE /* EnergyManagementSystemSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyManagementSystemSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIApp.swift; sourceTree = "<group>"; };
 		A1CC257C289A8CFE003E31DE /* DashboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboView.swift; sourceTree = "<group>"; };
@@ -99,9 +121,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A1279AED289B7F850046E947 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				A1376773289C78CE00742C88 /* View */,
+				A1279AEE289B7F9F0046E947 /* NetworkUtils.swift */,
+				A137676F289C29AA00742C88 /* Utils.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		A1279AF0289B7FEB0046E947 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1279AF1289B7FFE0046E947 /* URLRequest+Extension.swift */,
+				A1376776289C796000742C88 /* Color+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A13509E8289A95A8009C48FE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A1279AF0289B7FEB0046E947 /* Extensions */,
+				A1279AED289B7F850046E947 /* Commons */,
 				A13509E9289A964E009C48FE /* Dashbo */,
 			);
 			path = Modules;
@@ -129,6 +172,7 @@
 		A13509EB289A965C009C48FE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A1279AEB289B7E810046E947 /* DashboViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -136,6 +180,7 @@
 		A13509EC289A9661009C48FE /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				A1279AE9289B7E720046E947 /* DashboDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -143,8 +188,35 @@
 		A13509ED289A9669009C48FE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A1279AF3289B85F30046E947 /* HistoricModel.swift */,
+				A1279AF5289B86900046E947 /* LiveModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A1376773289C78CE00742C88 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1376771289C734A00742C88 /* LottieView.swift */,
+				A1376774289C790100742C88 /* LoadingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1376778289C79B900742C88 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A1376779289C79C000742C88 /* Lottie */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A1376779289C79C000742C88 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				A137677A289C7DC100742C88 /* electricity-charging.json */,
+			);
+			path = Lottie;
 			sourceTree = "<group>";
 		};
 		A1CC256E289A8CFE003E31DE = {
@@ -172,6 +244,7 @@
 		A1CC2579289A8CFE003E31DE /* EnergyManagementSystemSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A1376778289C79B900742C88 /* Resource */,
 				A13509E8289A95A8009C48FE /* Modules */,
 				A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */,
 				A1CC257E289A8CFF003E31DE /* Assets.xcassets */,
@@ -325,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A137677B289C7DC200742C88 /* electricity-charging.json in Resources */,
 				A1CC2582289A8CFF003E31DE /* Preview Assets.xcassets in Resources */,
 				A1CC257F289A8CFF003E31DE /* Assets.xcassets in Resources */,
 			);
@@ -472,7 +546,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1279AF4289B85F30046E947 /* HistoricModel.swift in Sources */,
 				A1CC257D289A8CFE003E31DE /* DashboView.swift in Sources */,
+				A1376770289C29AA00742C88 /* Utils.swift in Sources */,
+				A1376775289C790100742C88 /* LoadingView.swift in Sources */,
+				A1279AF2289B7FFE0046E947 /* URLRequest+Extension.swift in Sources */,
+				A1279AF6289B86900046E947 /* LiveModel.swift in Sources */,
+				A1279AEC289B7E810046E947 /* DashboViewModel.swift in Sources */,
+				A1376777289C796000742C88 /* Color+Extension.swift in Sources */,
+				A1279AEF289B7F9F0046E947 /* NetworkUtils.swift in Sources */,
+				A1376772289C734A00742C88 /* LottieView.swift in Sources */,
+				A1279AEA289B7E720046E947 /* DashboDataSource.swift in Sources */,
 				A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
