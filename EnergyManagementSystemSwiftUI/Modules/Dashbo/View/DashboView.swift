@@ -13,18 +13,37 @@ struct DashboView: View {
     
     var body: some View {
         ZStack {
-            Text("Hello, world!")
-                .padding()
+            VStack {
+                HStack {
+                    Spacer()
+                    DashboWidgetCircleView(textTitle: "Quasar Discharged",
+                                     value: $viewModel.negativeQuasars,
+                                     selectedID: $viewModel.selectedID)
+                    .padding(.trailing, 30)
+                    
+                    DashboWidgetCircleView(textTitle: "Quasar charged",
+                                     value: $viewModel.positiveQuasars,
+                                     selectedID: $viewModel.selectedID)
+                    Spacer()
+                    
+                }.padding(.horizontal, 25)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             
             if viewModel.stateEvents == .loading {
                 LoadingView(alpha: 0.15)
                     .zIndex(3.0)
             }
             
-        }.onAppear {
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.white)
+        .onAppear {
             viewModel.fetchData()
         }
-
+        .onTapGesture {
+            viewModel.selectedID = UUID()
+        }
     }
 }
 

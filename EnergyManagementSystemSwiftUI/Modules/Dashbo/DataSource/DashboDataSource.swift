@@ -56,7 +56,7 @@ final class DashboDataSource: DashboDataSourceProtocol {
     func fetchHistoricRequest(completion: @escaping NTResponse<HistoricsModels>) {
         cancelOperation()
         
-        guard let request = URLRequest.buildRequest(method: Keys.methodLive, methodType: .GET) else {
+        guard let request = URLRequest.buildRequest(method: Keys.methodHistoric, methodType: .GET) else {
             completion(.error(.unknown))
             return
         }
