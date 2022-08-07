@@ -10,9 +10,10 @@ import SwiftUI
 struct DashboWidgetCircleView: View {
     
     private let customID = UUID()
+    @State private var isSelected: Bool = false
     @State var textTitle: String = "Test title"
+    
     @Binding var value: Float
-    @State var isSelected: Bool = false
     @Binding var selectedID: UUID
     
     var body: some View {

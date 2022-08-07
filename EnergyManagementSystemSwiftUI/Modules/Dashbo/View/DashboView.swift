@@ -24,9 +24,16 @@ struct DashboView: View {
                     DashboWidgetCircleView(textTitle: "Quasar charged",
                                      value: $viewModel.positiveQuasars,
                                      selectedID: $viewModel.selectedID)
+                    
                     Spacer()
                     
                 }.padding(.horizontal, 25)
+                
+                DashboSourceAndDemandView(data: $viewModel.sourceAndDemand, selectedID: $viewModel.selectedID)
+                    .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
+                
+                DashboPercentageSourceView(data: $viewModel.sourceAndDemand, selectedID: $viewModel.selectedID)
+                    .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             
@@ -39,7 +46,9 @@ struct DashboView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.white)
         .onAppear {
-            viewModel.fetchData()
+            DispatchQueue.global().asyncAfter(deadline: .now() + 1.5) {
+                viewModel.fetchData()
+            }
         }
         .onTapGesture {
             viewModel.selectedID = UUID()

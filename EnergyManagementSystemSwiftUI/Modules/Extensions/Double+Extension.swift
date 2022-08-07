@@ -1,13 +1,13 @@
 //
-//  Float+Extension.swift
+//  Double+Extension.swift
 //  EnergyManagementSystemSwiftUI
 //
-//  Created by Jonashio on 5/8/22.
+//  Created by Jonashio on 7/8/22.
 //
 
 import Foundation
 
-extension Float {
+extension Double {
     var clean: String {
         return String(format: "%.2f", self)
     }

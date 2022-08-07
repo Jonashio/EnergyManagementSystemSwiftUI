@@ -21,6 +21,9 @@
 		A1376775289C790100742C88 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1376774289C790100742C88 /* LoadingView.swift */; };
 		A1376777289C796000742C88 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1376776289C796000742C88 /* Color+Extension.swift */; };
 		A137677B289C7DC200742C88 /* electricity-charging.json in Resources */ = {isa = PBXBuildFile; fileRef = A137677A289C7DC100742C88 /* electricity-charging.json */; };
+		A15B934D28A010190015284A /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B934C28A010190015284A /* Double+Extension.swift */; };
+		A15B934F28A013EE0015284A /* DashboSourceAndDemandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B934E28A013EE0015284A /* DashboSourceAndDemandView.swift */; };
+		A15B935128A019C80015284A /* DashboPercentageSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B935028A019C80015284A /* DashboPercentageSourceView.swift */; };
 		A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */; };
 		A1CC257D289A8CFE003E31DE /* DashboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257C289A8CFE003E31DE /* DashboView.swift */; };
 		A1CC257F289A8CFF003E31DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC257E289A8CFF003E31DE /* Assets.xcassets */; };
@@ -30,7 +33,6 @@
 		A1CC2598289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC2597289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift */; };
 		A1E2A90A289D1E7500CB1C68 /* DashboWidgetCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2A909289D1E7500CB1C68 /* DashboWidgetCircleView.swift */; };
 		A1E2A90C289D361D00CB1C68 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2A90B289D361D00CB1C68 /* Float+Extension.swift */; };
-		A1E2A90E289D493200CB1C68 /* DashboWidgetRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2A90D289D493200CB1C68 /* DashboWidgetRectangleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,9 @@
 		A1376774289C790100742C88 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		A1376776289C796000742C88 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		A137677A289C7DC100742C88 /* electricity-charging.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "electricity-charging.json"; sourceTree = "<group>"; };
+		A15B934C28A010190015284A /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		A15B934E28A013EE0015284A /* DashboSourceAndDemandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboSourceAndDemandView.swift; sourceTree = "<group>"; };
+		A15B935028A019C80015284A /* DashboPercentageSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboPercentageSourceView.swift; sourceTree = "<group>"; };
 		A1CC2577289A8CFE003E31DE /* EnergyManagementSystemSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyManagementSystemSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIApp.swift; sourceTree = "<group>"; };
 		A1CC257C289A8CFE003E31DE /* DashboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboView.swift; sourceTree = "<group>"; };
@@ -78,7 +83,6 @@
 		A1CC2597289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1E2A909289D1E7500CB1C68 /* DashboWidgetCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboWidgetCircleView.swift; sourceTree = "<group>"; };
 		A1E2A90B289D361D00CB1C68 /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
-		A1E2A90D289D493200CB1C68 /* DashboWidgetRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboWidgetRectangleView.swift; sourceTree = "<group>"; };
 		A56021E3009CB7600EE50C40 /* Pods_EnergyManagementSystemSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnergyManagementSystemSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92243568747AD388A17BFE7 /* Pods-EnergyManagementSystemSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnergyManagementSystemSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-EnergyManagementSystemSwiftUI/Pods-EnergyManagementSystemSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		D0B6783E55A76E4EE8EAB4D4 /* Pods_EnergyManagementSystemSwiftUI_EnergyManagementSystemSwiftUIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnergyManagementSystemSwiftUI_EnergyManagementSystemSwiftUIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +147,7 @@
 				A1279AF1289B7FFE0046E947 /* URLRequest+Extension.swift */,
 				A1376776289C796000742C88 /* Color+Extension.swift */,
 				A1E2A90B289D361D00CB1C68 /* Float+Extension.swift */,
+				A15B934C28A010190015284A /* Double+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,7 +178,8 @@
 			children = (
 				A1CC257C289A8CFE003E31DE /* DashboView.swift */,
 				A1E2A909289D1E7500CB1C68 /* DashboWidgetCircleView.swift */,
-				A1E2A90D289D493200CB1C68 /* DashboWidgetRectangleView.swift */,
+				A15B934E28A013EE0015284A /* DashboSourceAndDemandView.swift */,
+				A15B935028A019C80015284A /* DashboPercentageSourceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -557,8 +563,11 @@
 			files = (
 				A1E2A90A289D1E7500CB1C68 /* DashboWidgetCircleView.swift in Sources */,
 				A1279AF4289B85F30046E947 /* HistoricModel.swift in Sources */,
+				A15B935128A019C80015284A /* DashboPercentageSourceView.swift in Sources */,
 				A1CC257D289A8CFE003E31DE /* DashboView.swift in Sources */,
 				A1376770289C29AA00742C88 /* Utils.swift in Sources */,
+				A15B934F28A013EE0015284A /* DashboSourceAndDemandView.swift in Sources */,
+				A15B934D28A010190015284A /* Double+Extension.swift in Sources */,
 				A1376775289C790100742C88 /* LoadingView.swift in Sources */,
 				A1279AF2289B7FFE0046E947 /* URLRequest+Extension.swift in Sources */,
 				A1279AF6289B86900046E947 /* LiveModel.swift in Sources */,
@@ -568,7 +577,6 @@
 				A1376772289C734A00742C88 /* LottieView.swift in Sources */,
 				A1279AEA289B7E720046E947 /* DashboDataSource.swift in Sources */,
 				A1E2A90C289D361D00CB1C68 /* Float+Extension.swift in Sources */,
-				A1E2A90E289D493200CB1C68 /* DashboWidgetRectangleView.swift in Sources */,
 				A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

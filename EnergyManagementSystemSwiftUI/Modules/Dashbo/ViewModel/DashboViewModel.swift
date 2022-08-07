@@ -12,13 +12,14 @@ import SwiftUI
 final class DashboViewModel: ObservableObject {
     var objectWillChange = ObservableObjectPublisher()
     
-    @Published var stateEvents: StateEvents = .normal { didSet { objectWillChange.send() } }
+    @Published var stateEvents: StateEvents = .loading { didSet { objectWillChange.send() } }
     @Published var selectedID: UUID = UUID() { didSet { objectWillChange.send() } }
     @Published var positiveQuasars: Float = 0 { didSet { objectWillChange.send() } }
     @Published var negativeQuasars: Float = 0 { didSet { objectWillChange.send() } }
+    @Published var sourceAndDemand: DashboWidgetRectangleData = (demand: 0, solar: 0, grid: 0, quasar: 0) { didSet { objectWillChange.send() } }
     
-    var historicData: HistoricsModels = HistoricsModels()
-    var liveData: LiveModel = LiveModel(solarPower: 0,
+    private var historicData: HistoricsModels = HistoricsModels()
+    private var liveData: LiveModel = LiveModel(solarPower: 0,
                                         quasarsPower: 0,
                                         gridPower: 0,
                                         buildingDemand: 0,
@@ -36,6 +37,16 @@ final class DashboViewModel: ObservableObject {
         liveData = model
         setupPositiveQuasar()
         setupNegativeQuasar()
+        setupSourceAndDemand()
+    }
+    
+    private func setupSourceAndDemand() {
+        DispatchQueue.main.async {
+            self.sourceAndDemand = (demand: self.liveData.buildingDemand,
+                                    solar: self.liveData.solarPower,
+                                    grid: self.liveData.gridPower,
+                                    quasar: self.liveData.quasarsPower)
+        }
     }
     
     private func setupPositiveQuasar() {
@@ -98,7 +109,7 @@ final class DashboViewModel: ObservableObject {
         }
     }
     
-    func changeStateEvents(_ state: StateEvents) {
+    private func changeStateEvents(_ state: StateEvents) {
         DispatchQueue.main.async {
             withAnimation { self.stateEvents = state }
         }
