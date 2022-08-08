@@ -17,6 +17,8 @@ final class DashboViewModel: ObservableObject {
     @Published var positiveQuasars: Float = 0 { didSet { objectWillChange.send() } }
     @Published var negativeQuasars: Float = 0 { didSet { objectWillChange.send() } }
     @Published var sourceAndDemand: DashboWidgetRectangleData = (demand: 0, solar: 0, grid: 0, quasar: 0) { didSet { objectWillChange.send() } }
+    @Published var isShowingDetailView: Bool = false { didSet { objectWillChange.send() } }
+    
     
     private var historicData: HistoricsModels = HistoricsModels()
     private var liveData: LiveModel = LiveModel(solarPower: 0,

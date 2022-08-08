@@ -12,46 +12,56 @@ struct DashboView: View {
     @StateObject var viewModel = DashboViewModel()
     
     var body: some View {
-        ZStack {
-            VStack {
-                HStack {
-                    Spacer()
-                    DashboWidgetCircleView(textTitle: "Quasar Discharged",
-                                     value: $viewModel.negativeQuasars,
-                                     selectedID: $viewModel.selectedID)
-                    .padding(.trailing, 30)
+        NavigationView {
+            ZStack {
+                VStack {
+                    HStack {
+                        Spacer()
+                        DashboWidgetCircleView(textTitle: "Quasar Discharged",
+                                               value: $viewModel.negativeQuasars,
+                                               selectedID: $viewModel.selectedID)
+                        .padding(.trailing, 30)
+                        
+                        DashboWidgetCircleView(textTitle: "Quasar charged",
+                                               value: $viewModel.positiveQuasars,
+                                               selectedID: $viewModel.selectedID)
+                        
+                        Spacer()
+                        
+                    }.padding(.horizontal, 25)
                     
-                    DashboWidgetCircleView(textTitle: "Quasar charged",
-                                     value: $viewModel.positiveQuasars,
-                                     selectedID: $viewModel.selectedID)
+                    DashboSourceAndDemandView(data: $viewModel.sourceAndDemand, selectedID: $viewModel.selectedID)
+                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
                     
-                    Spacer()
+                    DashboPercentageSourceView(data: $viewModel.sourceAndDemand, selectedID: $viewModel.selectedID) {
+                        withAnimation {
+                            viewModel.isShowingDetailView.toggle()
+                        }
+                    }
+                        .padding(
+                            EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
                     
-                }.padding(.horizontal, 25)
+                    NavigationLink(destination: DetailView(), isActive: $viewModel.isShowingDetailView) { EmptyView() }
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 
-                DashboSourceAndDemandView(data: $viewModel.sourceAndDemand, selectedID: $viewModel.selectedID)
-                    .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
+                if viewModel.stateEvents == .loading {
+                    LoadingView(alpha: 0.15)
+                        .zIndex(3.0)
+                }
                 
-                DashboPercentageSourceView(data: $viewModel.sourceAndDemand, selectedID: $viewModel.selectedID)
-                    .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            
-            if viewModel.stateEvents == .loading {
-                LoadingView(alpha: 0.15)
-                    .zIndex(3.0)
+            .background(Color.black)
+            .navigationTitle("Dashbo Status")
+            .onAppear {
+                DispatchQueue.global().asyncAfter(deadline: .now() + 1.5) {
+                    viewModel.fetchData()
+                }
             }
-            
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.white)
-        .onAppear {
-            DispatchQueue.global().asyncAfter(deadline: .now() + 1.5) {
-                viewModel.fetchData()
+            .onTapGesture {
+                viewModel.selectedID = UUID()
             }
-        }
-        .onTapGesture {
-            viewModel.selectedID = UUID()
         }
     }
 }

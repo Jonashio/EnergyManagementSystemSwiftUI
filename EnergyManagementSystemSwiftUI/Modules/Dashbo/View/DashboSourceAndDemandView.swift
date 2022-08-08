@@ -20,7 +20,7 @@ struct DashboSourceAndDemandView: View {
         ZStack {
             RoundedRectangle(cornerRadius: 15)
                 .fill(Color.cyan)
-                .shadow(color: .black, radius: 5, x: 5, y: 5)
+                .shadow(color: .gray, radius: 5, x: 5, y: 5)
             
             VStack(spacing: 0) {
                 HStack(spacing: 5) {

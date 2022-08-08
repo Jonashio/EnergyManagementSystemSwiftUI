@@ -20,7 +20,7 @@ struct DashboWidgetCircleView: View {
         ZStack {
             Circle()
                 .fill(Color(amount: value * 100))
-                .shadow(color: .black, radius: 5, x: 5, y: 5)
+                .shadow(color: .gray, radius: 5, x: 5, y: 5)
                 .scaleEffect(isSelected ? 1.2 : 1)
             
             Circle()

@@ -8,7 +8,8 @@
 import Foundation
 
 // MARK: - HistoricModel
-struct HistoricModel: Codable {
+struct HistoricModel: Codable, Identifiable {
+    let id = UUID()
     let buildingActivePower, gridActivePower, pvActivePower, quasarsActivePower: Double
     let timestamp: Date
 

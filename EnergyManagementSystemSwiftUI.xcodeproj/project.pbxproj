@@ -24,6 +24,9 @@
 		A15B934D28A010190015284A /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B934C28A010190015284A /* Double+Extension.swift */; };
 		A15B934F28A013EE0015284A /* DashboSourceAndDemandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B934E28A013EE0015284A /* DashboSourceAndDemandView.swift */; };
 		A15B935128A019C80015284A /* DashboPercentageSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B935028A019C80015284A /* DashboPercentageSourceView.swift */; };
+		A15B935428A0619D0015284A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = A15B935328A0619D0015284A /* SwiftUICharts */; };
+		A15B935B28A062270015284A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B935A28A062270015284A /* DetailView.swift */; };
+		A15B935D28A062330015284A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B935C28A062330015284A /* DetailViewModel.swift */; };
 		A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */; };
 		A1CC257D289A8CFE003E31DE /* DashboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257C289A8CFE003E31DE /* DashboView.swift */; };
 		A1CC257F289A8CFF003E31DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC257E289A8CFF003E31DE /* Assets.xcassets */; };
@@ -71,6 +74,8 @@
 		A15B934C28A010190015284A /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		A15B934E28A013EE0015284A /* DashboSourceAndDemandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboSourceAndDemandView.swift; sourceTree = "<group>"; };
 		A15B935028A019C80015284A /* DashboPercentageSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboPercentageSourceView.swift; sourceTree = "<group>"; };
+		A15B935A28A062270015284A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		A15B935C28A062330015284A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		A1CC2577289A8CFE003E31DE /* EnergyManagementSystemSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyManagementSystemSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIApp.swift; sourceTree = "<group>"; };
 		A1CC257C289A8CFE003E31DE /* DashboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboView.swift; sourceTree = "<group>"; };
@@ -96,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B49D209083427F5E52AC440 /* Pods_EnergyManagementSystemSwiftUI.framework in Frameworks */,
+				A15B935428A0619D0015284A /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,9 +161,10 @@
 		A13509E8289A95A8009C48FE /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A13509E9289A964E009C48FE /* Dashbo */,
+				A15B935528A061E00015284A /* Detail */,
 				A1279AF0289B7FEB0046E947 /* Extensions */,
 				A1279AED289B7F850046E947 /* Commons */,
-				A13509E9289A964E009C48FE /* Dashbo */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -203,7 +210,6 @@
 		A13509ED289A9669009C48FE /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A1279AF3289B85F30046E947 /* HistoricModel.swift */,
 				A1279AF5289B86900046E947 /* LiveModel.swift */,
 			);
 			path = Models;
@@ -232,6 +238,40 @@
 				A137677A289C7DC100742C88 /* electricity-charging.json */,
 			);
 			path = Lottie;
+			sourceTree = "<group>";
+		};
+		A15B935528A061E00015284A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A15B935928A0620C0015284A /* Models */,
+				A15B935728A061F60015284A /* ViewModel */,
+				A15B935628A061F00015284A /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A15B935628A061F00015284A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A15B935A28A062270015284A /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A15B935728A061F60015284A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A15B935C28A062330015284A /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A15B935928A0620C0015284A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1279AF3289B85F30046E947 /* HistoricModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A1CC256E289A8CFE003E31DE = {
@@ -322,6 +362,9 @@
 			dependencies = (
 			);
 			name = EnergyManagementSystemSwiftUI;
+			packageProductDependencies = (
+				A15B935328A0619D0015284A /* SwiftUICharts */,
+			);
 			productName = EnergyManagementSystemSwiftUI;
 			productReference = A1CC2577289A8CFE003E31DE /* EnergyManagementSystemSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -397,6 +440,9 @@
 				Base,
 			);
 			mainGroup = A1CC256E289A8CFE003E31DE;
+			packageReferences = (
+				A15B935228A0619D0015284A /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+			);
 			productRefGroup = A1CC2578289A8CFE003E31DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -562,11 +608,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E2A90A289D1E7500CB1C68 /* DashboWidgetCircleView.swift in Sources */,
+				A15B935B28A062270015284A /* DetailView.swift in Sources */,
 				A1279AF4289B85F30046E947 /* HistoricModel.swift in Sources */,
 				A15B935128A019C80015284A /* DashboPercentageSourceView.swift in Sources */,
 				A1CC257D289A8CFE003E31DE /* DashboView.swift in Sources */,
 				A1376770289C29AA00742C88 /* Utils.swift in Sources */,
 				A15B934F28A013EE0015284A /* DashboSourceAndDemandView.swift in Sources */,
+				A15B935D28A062330015284A /* DetailViewModel.swift in Sources */,
 				A15B934D28A010190015284A /* Double+Extension.swift in Sources */,
 				A1376775289C790100742C88 /* LoadingView.swift in Sources */,
 				A1279AF2289B7FFE0046E947 /* URLRequest+Extension.swift in Sources */,
@@ -742,6 +790,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -771,6 +820,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -902,6 +952,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A15B935228A0619D0015284A /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts.git";
+			requirement = {
+				kind = exactVersion;
+				version = 2.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A15B935328A0619D0015284A /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A15B935228A0619D0015284A /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A1CC256F289A8CFE003E31DE /* Project object */;
 }

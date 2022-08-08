@@ -40,7 +40,7 @@ struct DashboPercentageSourceView: View {
         .frame(maxWidth: .infinity)
         .background(Color.white)
         .cornerRadius(15)
-        .shadow(color: .black, radius: 5, x: 5, y: 5)
+        .shadow(color: .gray, radius: 5, x: 5, y: 5)
         .onChange(of: selectedID, perform: { newValue in
             if newValue != customID {
                 withAnimation(.interpolatingSpring(stiffness: 850, damping: 15)) {
