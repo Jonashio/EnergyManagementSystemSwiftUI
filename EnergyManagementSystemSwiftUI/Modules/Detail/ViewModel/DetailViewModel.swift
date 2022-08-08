@@ -4,8 +4,6 @@
 //
 //  Created by Jonashio on 7/8/22.
 //
-
-import Foundation
 import Combine
 import SwiftUI
 import SwiftUICharts
@@ -14,7 +12,7 @@ final class DetailViewModel: ObservableObject {
     var objectWillChange = ObservableObjectPublisher()
     
     @Published var stateEvents: StateEvents = .loading { didSet { objectWillChange.send() } }
-    @Published var chartData: MultiLineChartData = MultiLineChartData(dataSets: MultiLineDataSet(dataSets: [])) { didSet { objectWillChange.send() } }
+    var chartData: MultiLineChartData = MultiLineChartData(dataSets: MultiLineDataSet(dataSets: []))
     
     private var historicData: HistoricsModels = HistoricsModels()
     private var dataSource: DashboDataSourceProtocol
@@ -24,6 +22,58 @@ final class DetailViewModel: ObservableObject {
     }
     
     func setupChartsView() {
+        let dps = getDataPoints()
+        
+        let data = MultiLineDataSet(dataSets: [
+            generateSingleDataSet(data: dps.solar, title: "Solar", color: .red),
+            generateSingleDataSet(data: dps.grid, title: "Grid", color: .blue),
+            generateSingleDataSet(data: dps.quasar, title: "Quasar", color: .green)
+        ])
+        
+        let dataset = MultiLineChartData(dataSets: data,
+                                         metadata: ChartMetadata(title: "Historic data"),
+                                         chartStyle: getLineChartStyle())
+        
+        DispatchQueue.main.async {
+            self.chartData = dataset
+        }
+    }
+    
+    func fetchData() {
+        changeStateEvents(.loading)
+        
+        self.fetchHistoric { responseHistoric in
+            switch responseHistoric {
+            case .success:
+                self.changeStateEvents(.normal)
+            case .error:
+                self.changeStateEvents(.error)
+            }
+        }
+    }
+    
+    func changeStateEvents(_ state: StateEvents) {
+        DispatchQueue.main.async {
+            withAnimation { self.stateEvents = state }
+        }
+    }
+}
+extension DetailViewModel {
+    private func fetchHistoric(completion: @escaping NTResponse<Void>) {
+        dataSource.fetchHistoricRequest { response in
+            switch response {
+            case .success(let model):
+                self.historicData = model
+                self.setupChartsView()
+                completion(.success(()))
+            case .error(let error):
+                print(error)
+                completion(.error(error))
+            }
+        }
+    }
+    
+    private func getDataPoints() -> (solar: [LineChartDataPoint], grid: [LineChartDataPoint], quasar: [LineChartDataPoint]) {
         var solarDataPoints: [LineChartDataPoint] = []
         var gridDataPoints: [LineChartDataPoint] = []
         var quasarDataPoints: [LineChartDataPoint] = []
@@ -44,70 +94,23 @@ final class DetailViewModel: ObservableObject {
             counter+=1
         }
         
-        
-        let data = MultiLineDataSet(dataSets: [
-            LineDataSet(dataPoints: solarDataPoints,
-                        legendTitle: "Solar",
-                        pointStyle: PointStyle(pointType: .outline, pointShape: .circle),
-                        style: LineStyle(lineColour: ColourStyle(colour: .red), lineType: .line)),
-            
-            LineDataSet(dataPoints: gridDataPoints,
-                        legendTitle: "Grid",
-                        pointStyle: PointStyle(pointType: .outline, pointShape: .square),
-                        style: LineStyle(lineColour: ColourStyle(colour: .blue), lineType: .line)),
-            
-            LineDataSet(dataPoints: quasarDataPoints,
-                        legendTitle: "Quasar",
-                        style: LineStyle(lineColour: ColourStyle(colour: .green),lineType: .line)),
-        ])
-        
-        let dataset = MultiLineChartData(dataSets: data,
-                                         metadata: ChartMetadata(title: "Historic balance"),
-                                         chartStyle: LineChartStyle(infoBoxPlacement: .floating,
-                                                                    xAxisGridStyle: GridStyle(numberOfLines: 12),
-                                                                    xAxisTitle: "Day",
-                                                                    yAxisGridStyle: GridStyle(numberOfLines: 5),
-                                                                    yAxisNumberOfLabels: 5,
-                                                                    yAxisTitle: "KW",
-                                                                    baseline: .minimumValue,
-                                                                    topLine: .maximumValue))
-
-        DispatchQueue.main.async {
-            self.chartData = dataset
-        }
-        
+        return (solarDataPoints, gridDataPoints, quasarDataPoints)
     }
     
-    func fetchData() {
-        changeStateEvents(.loading)
-        
-        self.fetchHistoric { responseHistoric in
-            switch responseHistoric {
-            case .success:
-                self.changeStateEvents(.normal)
-            case .error:
-                self.changeStateEvents(.error)
-            }
-        }
+    private func generateSingleDataSet(data: [LineChartDataPoint], title: String, color: Color) -> LineDataSet {
+        return LineDataSet(dataPoints: data,
+                           legendTitle: title,
+                           style: LineStyle(lineColour: ColourStyle(colour: color), lineType: .line))
     }
     
-    private func fetchHistoric(completion: @escaping NTResponse<Void>) {
-        dataSource.fetchHistoricRequest { response in
-            switch response {
-            case .success(let model):
-                self.historicData = model
-                self.setupChartsView()
-                completion(.success(()))
-            case .error(let error):
-                print(error)
-                completion(.error(error))
-            }
-        }
-    }
-    
-    private func changeStateEvents(_ state: StateEvents) {
-        DispatchQueue.main.async {
-            withAnimation { self.stateEvents = state }
-        }
+    private func getLineChartStyle() -> LineChartStyle {
+        return LineChartStyle(infoBoxPlacement: .floating,
+                              xAxisGridStyle: GridStyle(numberOfLines: 12),
+                              xAxisTitle: "Day",
+                              yAxisGridStyle: GridStyle(numberOfLines: 5),
+                              yAxisNumberOfLabels: 5,
+                              yAxisTitle: "KW",
+                              baseline: .minimumValue,
+                              topLine: .maximumValue)
     }
 }

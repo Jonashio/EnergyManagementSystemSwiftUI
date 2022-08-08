@@ -23,7 +23,6 @@ struct DetailView: View {
                     .headerBox(chartData: viewModel.chartData)
                     .legends(chartData: viewModel.chartData, columns: [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())])
                     .id(viewModel.chartData.id)
-                    .frame(minWidth: 150, maxWidth: 900, minHeight: 150, idealHeight: 500, maxHeight: 600, alignment: .center)
                     .padding(.horizontal)
             }
             
@@ -34,10 +33,9 @@ struct DetailView: View {
         }
         .navigationTitle("Chart")
         .onAppear {
-            DispatchQueue.global().asyncAfter(deadline: .now() + 1.5) {
+            DispatchQueue.global().asyncAfter(deadline: .now() + 1.0) {
                 viewModel.fetchData()
             }
-            
         }
     }
 }
