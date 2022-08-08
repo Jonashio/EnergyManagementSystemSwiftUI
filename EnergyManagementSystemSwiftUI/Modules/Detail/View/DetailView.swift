@@ -30,6 +30,12 @@ struct DetailView: View {
                 LoadingView(alpha: 0.15)
                     .zIndex(3.0)
             }
+            
+            if viewModel.stateEvents == .error {
+                ErrorView {
+                    viewModel.fetchData()
+                }
+            }
         }
         .navigationTitle("Chart")
         .onAppear {

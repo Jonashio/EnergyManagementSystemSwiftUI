@@ -27,6 +27,7 @@
 		A15B935428A0619D0015284A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = A15B935328A0619D0015284A /* SwiftUICharts */; };
 		A15B935B28A062270015284A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B935A28A062270015284A /* DetailView.swift */; };
 		A15B935D28A062330015284A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B935C28A062330015284A /* DetailViewModel.swift */; };
+		A18B01C928A1C32700EECBCF /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B01C828A1C32700EECBCF /* ErrorView.swift */; };
 		A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */; };
 		A1CC257D289A8CFE003E31DE /* DashboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257C289A8CFE003E31DE /* DashboView.swift */; };
 		A1CC257F289A8CFF003E31DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC257E289A8CFF003E31DE /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		A15B935028A019C80015284A /* DashboPercentageSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboPercentageSourceView.swift; sourceTree = "<group>"; };
 		A15B935A28A062270015284A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A15B935C28A062330015284A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		A18B01C828A1C32700EECBCF /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		A1CC2577289A8CFE003E31DE /* EnergyManagementSystemSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyManagementSystemSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIApp.swift; sourceTree = "<group>"; };
 		A1CC257C289A8CFE003E31DE /* DashboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboView.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			children = (
 				A1376771289C734A00742C88 /* LottieView.swift */,
 				A1376774289C790100742C88 /* LoadingView.swift */,
+				A18B01C828A1C32700EECBCF /* ErrorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 				A1279AEC289B7E810046E947 /* DashboViewModel.swift in Sources */,
 				A1376777289C796000742C88 /* Color+Extension.swift in Sources */,
 				A1279AEF289B7F9F0046E947 /* NetworkUtils.swift in Sources */,
+				A18B01C928A1C32700EECBCF /* ErrorView.swift in Sources */,
 				A1376772289C734A00742C88 /* LottieView.swift in Sources */,
 				A1279AEA289B7E720046E947 /* DashboDataSource.swift in Sources */,
 				A1E2A90C289D361D00CB1C68 /* Float+Extension.swift in Sources */,

@@ -48,7 +48,12 @@ struct DashboView: View {
                 
                 if viewModel.stateEvents == .loading {
                     LoadingView(alpha: 0.15)
-                        .zIndex(3.0)
+                }
+                
+                if viewModel.stateEvents == .error {
+                    ErrorView {
+                        viewModel.fetchData()
+                    }
                 }
                 
             }
