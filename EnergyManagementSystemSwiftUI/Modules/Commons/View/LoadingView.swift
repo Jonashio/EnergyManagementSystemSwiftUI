@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoadingView: View {
     
-    var alpha: Double = 0
+    var alpha: Double = 0.5
     
     var body: some View {
         VStack {

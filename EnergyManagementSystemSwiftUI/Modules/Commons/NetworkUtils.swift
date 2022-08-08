@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 public typealias NTParams = [String: String]
 public typealias NTResponse<Value> = ((NTResult<Value, NTError<Error>>) -> Void)

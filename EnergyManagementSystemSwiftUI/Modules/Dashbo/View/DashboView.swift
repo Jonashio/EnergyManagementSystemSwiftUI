@@ -14,34 +14,35 @@ struct DashboView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                VStack {
-                    HStack {
-                        Spacer()
-                        DashboWidgetCircleView(textTitle: "Quasar Discharged",
-                                               value: $viewModel.negativeQuasars,
-                                               selectedID: $viewModel.selectedID)
-                        .padding(.trailing, 30)
+                ScrollView(.vertical) {
+                    VStack {
+                        HStack {
+                            Spacer()
+                            DashboWidgetCircleView(textTitle: "Quasar Discharged",
+                                                   value: $viewModel.negativeQuasars,
+                                                   selectedID: $viewModel.selectedID)
+                            .padding(.trailing, 30)
+                            
+                            DashboWidgetCircleView(textTitle: "Quasar charged",
+                                                   value: $viewModel.positiveQuasars,
+                                                   selectedID: $viewModel.selectedID)
+                            
+                            Spacer()
+                            
+                        }.padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
                         
-                        DashboWidgetCircleView(textTitle: "Quasar charged",
-                                               value: $viewModel.positiveQuasars,
-                                               selectedID: $viewModel.selectedID)
+                        DashboSourceAndDemandView(data: $viewModel.sourceAndDemand, selectedID: $viewModel.selectedID)
+                            .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
                         
-                        Spacer()
-                        
-                    }.padding(.horizontal, 25)
-                    
-                    DashboSourceAndDemandView(data: $viewModel.sourceAndDemand, selectedID: $viewModel.selectedID)
-                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
-                    
-                    DashboPercentageSourceView(data: $viewModel.sourceAndDemand, selectedID: $viewModel.selectedID) {
-                        withAnimation {
-                            viewModel.isShowingDetailView.toggle()
+                        DashboPercentageSourceView(data: $viewModel.sourceAndDemand, selectedID: $viewModel.selectedID) {
+                            withAnimation {
+                                viewModel.isShowingDetailView.toggle()
+                            }
                         }
+                        .padding(EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
+                        
+                        NavigationLink(destination: DetailView(), isActive: $viewModel.isShowingDetailView) { EmptyView() }
                     }
-                        .padding(
-                            EdgeInsets(top: 20, leading: 20, bottom: 0, trailing: 20))
-                    
-                    NavigationLink(destination: DetailView(), isActive: $viewModel.isShowingDetailView) { EmptyView() }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 

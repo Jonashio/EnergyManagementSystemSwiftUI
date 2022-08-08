@@ -34,6 +34,7 @@ struct DashboSourceAndDemandView: View {
                 
                 if isSelected {
                     Divider()
+                        .padding(.vertical, 5)
                     
                     HStack(spacing: 5) {
                         VStack {
@@ -95,7 +96,7 @@ struct DashboSourceAndDemandView: View {
             .frame(alignment: .center)
             .padding()
         }
-        .frame(maxWidth: .infinity, maxHeight: isSelected ? 160 : 60)
+        .frame(maxWidth: .infinity, minHeight: isSelected ? 160 : 60, maxHeight: isSelected ? 160 : 60)
         .onChange(of: selectedID, perform: { newValue in
             if newValue != customID {
                 withAnimation(.interpolatingSpring(stiffness: 850, damping: 15)) {
