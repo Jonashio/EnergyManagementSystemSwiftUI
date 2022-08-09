@@ -1,6 +1,6 @@
 # My EnergyManagementSystemSwiftUI Practice
 
-[(https://img.shields.io/github/license/Jonashio/EnergyManagementSystemSwiftUI)](https://img.shields.io/github/license/Jonashio/EnergyManagementSystemSwiftUI) | https://img.shields.io/badge/dependencies-SwiftLint-green | https://img.shields.io/badge/Platform%20Compatibility-iOS-red | https://img.shields.io/badge/Lenguage-SwiftUI-yellow
+[![License](https://img.shields.io/github/license/Jonashio/EnergyManagementSystemSwiftUI)](https://img.shields.io/github/license/Jonashio/EnergyManagementSystemSwiftUI) | https://img.shields.io/badge/dependencies-SwiftLint-green | https://img.shields.io/badge/Platform%20Compatibility-iOS-red | https://img.shields.io/badge/Lenguage-SwiftUI-yellow
 
 
 The first screen is a dashboard that holds different widgets of an energy management system (EMS). The widgets allow you to observe the different sources of energy and the amount of energy overtime.
