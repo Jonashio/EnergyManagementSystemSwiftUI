@@ -16,45 +16,48 @@ struct DashboPercentageSourceView: View {
     var action: (() -> Void)?
     
     var body: some View {
-        ZStack {
-            VStack(spacing: 5) {
-                ProgressView("Solar", value: getValue(data.solar), total: data.demand)
-                    .font(Font.system(.body))
-                    .foregroundColor(.black)
-                    .accentColor(data.solar > 0 ? .accentColor : .red)
-                    .progressViewStyle(LinearProgressViewStyle())
-                ProgressView("Grid", value: getValue(data.grid), total: data.demand)
-                    .font(Font.system(.body))
-                    .foregroundColor(.black)
-                    .accentColor(data.grid > 0 ? .accentColor : .red)
-                    .progressViewStyle(LinearProgressViewStyle())
-                ProgressView("Quasar", value: getValue(data.quasar), total: data.demand)
-                    .font(Font.system(.body))
-                    .foregroundColor(.black)
-                    .accentColor(data.quasar > 0 ? .accentColor : .red)
-                    .progressViewStyle(LinearProgressViewStyle())
-            }
-            .frame(alignment: .center)
-            .padding()
-        }
-        .frame(maxWidth: .infinity)
-        .background(Color.white)
-        .cornerRadius(15)
-        .shadow(color: .gray, radius: 5, x: 5, y: 5)
-        .onChange(of: selectedID, perform: { newValue in
-            if newValue != customID {
-                withAnimation(.interpolatingSpring(stiffness: 850, damping: 15)) {
-                    isSelected = false
-                }
-            }
-        })
-        .onTapGesture {
+        
+        Button(action: {
             withAnimation(.interpolatingSpring(stiffness: 850, damping: 15)) {
                 isSelected = true
                 selectedID = customID
             }
             action?()
+        }) {
+            ZStack {
+                VStack(spacing: 5) {
+                    ProgressView("Solar", value: getValue(data.solar), total: data.demand)
+                        .font(Font.system(.body))
+                        .foregroundColor(.black)
+                        .accentColor(data.solar > 0 ? .accentColor : .red)
+                        .progressViewStyle(LinearProgressViewStyle())
+                    ProgressView("Grid", value: getValue(data.grid), total: data.demand)
+                        .font(Font.system(.body))
+                        .foregroundColor(.black)
+                        .accentColor(data.grid > 0 ? .accentColor : .red)
+                        .progressViewStyle(LinearProgressViewStyle())
+                    ProgressView("Quasar", value: getValue(data.quasar), total: data.demand)
+                        .font(Font.system(.body))
+                        .foregroundColor(.black)
+                        .accentColor(data.quasar > 0 ? .accentColor : .red)
+                        .progressViewStyle(LinearProgressViewStyle())
+                }
+                .frame(alignment: .center)
+                .padding()
+            }
+            .frame(maxWidth: .infinity)
+            .background(Color.white)
+            .cornerRadius(15)
+            .shadow(color: .gray, radius: 5, x: 5, y: 5)
+            .onChange(of: selectedID, perform: { newValue in
+                if newValue != customID {
+                    withAnimation(.interpolatingSpring(stiffness: 850, damping: 15)) {
+                        isSelected = false
+                    }
+                }
+            })
         }
+        .accessibilityIdentifier("TapDetail")
     }
     
     func getValue(_ value: Double) -> Double {

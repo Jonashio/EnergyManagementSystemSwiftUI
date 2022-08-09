@@ -28,13 +28,13 @@
 		A15B935B28A062270015284A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B935A28A062270015284A /* DetailView.swift */; };
 		A15B935D28A062330015284A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B935C28A062330015284A /* DetailViewModel.swift */; };
 		A18B01C928A1C32700EECBCF /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B01C828A1C32700EECBCF /* ErrorView.swift */; };
+		A18B01CB28A1C83000EECBCF /* MockDashboDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18B01CA28A1C83000EECBCF /* MockDashboDataSource.swift */; };
 		A1CC257B289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */; };
 		A1CC257D289A8CFE003E31DE /* DashboView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC257C289A8CFE003E31DE /* DashboView.swift */; };
 		A1CC257F289A8CFF003E31DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC257E289A8CFF003E31DE /* Assets.xcassets */; };
 		A1CC2582289A8CFF003E31DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CC2581289A8CFF003E31DE /* Preview Assets.xcassets */; };
-		A1CC258C289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC258B289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift */; };
-		A1CC2596289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC2595289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.swift */; };
-		A1CC2598289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC2597289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift */; };
+		A1CC258C289A8CFF003E31DE /* DashboViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC258B289A8CFF003E31DE /* DashboViewModelSpec.swift */; };
+		A1CC2596289A8CFF003E31DE /* DashboViewUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CC2595289A8CFF003E31DE /* DashboViewUITest.swift */; };
 		A1E2A90A289D1E7500CB1C68 /* DashboWidgetCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2A909289D1E7500CB1C68 /* DashboWidgetCircleView.swift */; };
 		A1E2A90C289D361D00CB1C68 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E2A90B289D361D00CB1C68 /* Float+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -78,16 +78,16 @@
 		A15B935A28A062270015284A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		A15B935C28A062330015284A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		A18B01C828A1C32700EECBCF /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A18B01CA28A1C83000EECBCF /* MockDashboDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDashboDataSource.swift; sourceTree = "<group>"; };
 		A1CC2577289A8CFE003E31DE /* EnergyManagementSystemSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnergyManagementSystemSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CC257A289A8CFE003E31DE /* EnergyManagementSystemSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIApp.swift; sourceTree = "<group>"; };
 		A1CC257C289A8CFE003E31DE /* DashboView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboView.swift; sourceTree = "<group>"; };
 		A1CC257E289A8CFF003E31DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CC2581289A8CFF003E31DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1CC2587289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnergyManagementSystemSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1CC258B289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUITests.swift; sourceTree = "<group>"; };
+		A1CC258B289A8CFF003E31DE /* DashboViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboViewModelSpec.swift; sourceTree = "<group>"; };
 		A1CC2591289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnergyManagementSystemSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1CC2595289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIUITests.swift; sourceTree = "<group>"; };
-		A1CC2597289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyManagementSystemSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1CC2595289A8CFF003E31DE /* DashboViewUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboViewUITest.swift; sourceTree = "<group>"; };
 		A1E2A909289D1E7500CB1C68 /* DashboWidgetCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboWidgetCircleView.swift; sourceTree = "<group>"; };
 		A1E2A90B289D361D00CB1C68 /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
 		A56021E3009CB7600EE50C40 /* Pods_EnergyManagementSystemSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnergyManagementSystemSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -322,7 +322,8 @@
 		A1CC258A289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A1CC258B289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift */,
+				A1CC258B289A8CFF003E31DE /* DashboViewModelSpec.swift */,
+				A18B01CA28A1C83000EECBCF /* MockDashboDataSource.swift */,
 			);
 			path = EnergyManagementSystemSwiftUITests;
 			sourceTree = "<group>";
@@ -330,8 +331,7 @@
 		A1CC2594289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A1CC2595289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.swift */,
-				A1CC2597289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift */,
+				A1CC2595289A8CFF003E31DE /* DashboViewUITest.swift */,
 			);
 			path = EnergyManagementSystemSwiftUIUITests;
 			sourceTree = "<group>";
@@ -637,7 +637,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CC258C289A8CFF003E31DE /* EnergyManagementSystemSwiftUITests.swift in Sources */,
+				A1CC258C289A8CFF003E31DE /* DashboViewModelSpec.swift in Sources */,
+				A18B01CB28A1C83000EECBCF /* MockDashboDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,8 +646,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CC2598289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITestsLaunchTests.swift in Sources */,
-				A1CC2596289A8CFF003E31DE /* EnergyManagementSystemSwiftUIUITests.swift in Sources */,
+				A1CC2596289A8CFF003E31DE /* DashboViewUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
