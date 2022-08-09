@@ -8,7 +8,6 @@ target 'EnergyManagementSystemSwiftUI' do
   # Pods for EnergyManagementSystemSwiftUI
   pod 'SwiftLint', '0.47.1'
   pod 'lottie-ios', '3.3.0'
-  pod 'SwiftUICharts', '2.10.1'
 
   target 'EnergyManagementSystemSwiftUITests' do
     inherit! :search_paths
